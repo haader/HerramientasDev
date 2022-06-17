@@ -98,3 +98,13 @@ h3
     transform: translateY(-7px);
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
+
+.repositorio
+{
+    margin-top: 1rem;
+}
+
+footer
+{
+    margin-top: 2rem;
+}
