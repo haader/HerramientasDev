@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="./estilo.css">
+
+<div class="tittle">
+    <h3>HerramientasDev</h3>
+</div>
+<br>
+<div class="descripcion">
+    <h3>obtener valores de GET</h3>
+</div>
+
+<br>
+<br>
+
+<p >
+
+        function getParameterByName(name) {<br>
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");<br>
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),<br>
+        results = regex.exec(location.search);<br>
+        return results === null ? "no se encontro nada" : decodeURIComponent(results[1].replace(/\+/g, " "));<br>
+        <br>
+    }<br>
+    <br>
+
+    var producto = getParameterByName('pro');<br>
+    var cantidad = getParameterByName('can');<br>
+    var precio = getParameterByName('pre');<br>
+    <br>
+    document.getElementById("div").innerHTML+='<h4>Producto:'+producto+'</h4><h4>cantidad:'+cantidad+'</h4><h4>Precio:'+precio+'$</h4>';<br>
+
+
+</p>
+<br>
+<a href="https://es.stackoverflow.com/questions/445/c%C3%B3mo-obtener-valores-de-la-url-get-en-javascript"><text>fuente</text></a>
